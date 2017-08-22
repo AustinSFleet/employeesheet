@@ -10,5 +10,32 @@ var config = {
 
 var database=firebase.database();
 
-var name = $("#name").html
-var role= $("#role")
+var name = "";
+var role = "";
+var startDate = "";
+var monthlyRate = 0;
+
+
+
+$("button").on("click", function(event){
+    event.preventDefault();
+
+    var name = $("#name").val().trim();
+    var role= $("#role").val().trim();
+    var startDate = $("#start-date").val().trim();
+    var monthlyRate = $("#monthly-rate").val().trim();
+
+    $("#newEmployee").append( $("<tr>").attr(class="firstrow"));
+    $()
+        
+    
+
+    console.log(name);
+    console.log(role);
+    console.log(startDate);
+    console.log(monthlyRate);
+
+
+
+});
+
